@@ -25,17 +25,17 @@ body {
   outline-color:#F21651 ;
   border-radius: 20px;
   height: 40px;
-
 }
 
 
-.btn{
+#btn{
   background: #F21651;
   text-align: center;
   color: #fff;
   padding: 12px;
   border-radius: 20px;
   width: 100%;
+   font-size: 20px;   
 }
 .formulaire {
   float: right;
@@ -52,8 +52,8 @@ body {
 }
   
 
-.table{
-  position: relative;
+#table{
+  position: absolute;
   padding: 7% 7%;
   z-index: 2;
   left: 50%;
@@ -70,16 +70,16 @@ body {
 }
 
 
-thead,tbody{
+th,td{
   padding: 10px 15px;
   
 }
 
-thead{
+th{
   background: #85C8F245
   
 }
-tbody{
+td{
   font-family: 'Open Sans',Verdana, Geneva, Tahoma, sans-serif
 }
 

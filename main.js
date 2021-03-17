@@ -1,23 +1,36 @@
-function ajouter() {
-  var Nom=document.getElementsById("Nom").value;
-    var Nom=document.getElementsById("Prenom").value;
-  var Nom=document.getElementsById("Adresse").value;
-  var Nom=document.getElementsById("Telephone").value;
-  var Nom=document.getElementsById("Email").value;
-}
+var btn   =document.getElementById("btn");
+btn.addEventListener("click",table);
+var row=1;
 
+function inscrire (){
+  var Nom = document.getElementById("Nom").value;
+  var Prenom= document.getElementById("Prenom").value;
+ var Telephone = document.getElementById("Telephone").value;
+  
+  if (!name || !Prenom || !Telephone){
+   alert ("please fill all the boxes");
+   return;
+  }
+  
+  
+  var table = document.getElementById("table");
+  
+  var newRow = table.insertRow(row);
+  var cell1 = newRow.insertCell(0);
+  var cell2 = newRow.insertCell(1);
+  var cell3 = newRow.insertCell(2);
+  
+  
+  
+cell1.innerHTML =Nom ;
+cell2.innerHTML =Prenom;
+cell3.innerHTML =Telephone;
 
-localStorage.setItem("Nom",Nom);
-localStorage.setItem("Prenomom",Prenom);
-localStorage.setItem("Adresse",Adresse);
-localStorage.setItem("Telephone",Telephone);
-localStorage.setItem("Email",Email);
-
-
-document.getElementById("tab").style.display="inline-table";
-document.getElementById("bt").style.display="block";
-document.getElementById("tb").innerHTML+="<tr><td>"+localStorage.getItem("nom")+"</td><td>"+localStorage.getItem("pr")+"</td><td>"+localStorage.getItem("tel")+"</td><tr>";
-}
-function imp(){
-    window.print();
+row++;
+  
+  
+  
+  
+  
+  
 }
