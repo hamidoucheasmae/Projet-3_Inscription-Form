@@ -4,55 +4,80 @@
 <head>
     <meta charset="UTF-8">
     <title>The developers Warriors</title>
+    
+    
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+
     <link rel="stylesheet" href="style.css" type="text/css" media="all" />
     <link rel="stylesheet" href="impression.css" media="print">
 <script src="main.js"></script>
 </head>
 
 <body>
-    
+     <div class="container-fluid">
+       <div class="row">
   <div class="img">
     <img src="final-logo.png" alt="">
   </div>
-  
-  
-<div class="formulaire">
-  <div class="form">
-    <div class="form-items">
-      <input type="text" id="Nom" placeholder="  Nom">
-       <input type="text" id="Prenom" placeholder="   Prenom">
-      <input type="text" id="Adresse" placeholder="   Adresse">
-       <input type="Telephone" id="Telephone" placeholder="   Telephone">
-        <input type="Email" id="Email" placeholder="   Email">
 
-      
-    </div>
-    
-  </div>
-  <div> 
-    <center>
-    <input type="button" name="S'inscrire" id="btn" value="S'inscrire">
-  </center>
-  </div>
-  
-  
-  
-  <table id="table">
-    <tr>
-
-      <th>Nom</th>      
-      <th>Prenom</th>
-      <th>Telephone</th>
-      
-      
-      
-      
-      
-      
-    </tr>
-    
-  </table>
+            <div class="tab tab-2">
+                First Name :<input type="text" name="fname" id="fname">
+                Last Name :<input type="text" name="lname" id="lname">
+                Age :<input type="number" name="age" id="age"> Age :<input type="number" name="age" id="age">
+                
+                <button onclick="addHtmlTableRow();">Add</button>
+                <button onclick="editHtmlTbleSelectedRow();">Edit</button>
+                <button onclick="removeSelectedRow();">Remove</button>
+            </div>
+        </div>
+        
+        </div>
+        
+        </div>
+        <div class="row">
+          
+             <div class="tab tab-1">
+               <table id="table" border="1">
+                 <tr>
+                   <th>First Name</th>
+                   <th>Last Name</th>
+                   <th>Age</th>
+                 </tr>
+                 <tr>
+                   <td>A1</td>
+                   <td>B1</td>
+                   <td>10</td>
+                 </tr>
+                 <tr>
+                   <td>A3</td>
+                   <td>B3</td>
+                   <td>30</td>
+                 </tr>
+                 <tr>
+                   <td>A2</td>
+                   <td>B2</td>
+                   <td>20</td>
+                 </tr>
+               </table>
+             </div>
+          
+          
+          
+        </div>
+        
+        
+        
+        
+        
+        
+        
+        <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
 </body>
-
-</html>
