@@ -1,43 +1,48 @@
 
 body {
-  background: #121326;
+  background: #121326 !important;
 }
-.formulaire {
-  width: 250px;
+/* form {
+  width: 200px;
   background: #fff ;
   padding: 50px;
   margin: 80px auto ;
   border-radius: 30px;
-  position: relative ;
-}
+  position: relative  !important;
+  
+} */
 
-.form,
-.form-items{
-  width: 100%;
+form{
+  float: right;
+  width: 50% !important;
+  
 
 }
-.form-items #Nom,#Prenom,#Adresse,#Email,#Telephone{
+.form-control  {
   width: 100%;
+  
   margin-bottom: 10%;
   box-sizing: border-box;
-  background: #85C8F245;
+  background: #fff;
   border: 0;
   outline-color:#F21651 ;
   border-radius: 20px;
-  height: 40px;
+ 
+  
+  height: 40px !important;
 }
 
 
-#btn{
+.btn {
   background: #F21651;
   text-align: center;
   color: #fff;
   padding: 12px;
   border-radius: 20px;
   width: 100%;
-   font-size: 20px;   
+   font-size: 20px !important;   
 }
-.formulaire {
+form {
   float: right;
   margin-right: 7%;
 }
@@ -52,7 +57,7 @@ body {
 }
   
 
-#table{
+/* #table{
   position: absolute;
   padding: 7% 7%;
   z-index: 2;
@@ -82,5 +87,5 @@ th{
 td{
   font-family: 'Open Sans',Verdana, Geneva, Tahoma, sans-serif
 }
-
+ */
 
