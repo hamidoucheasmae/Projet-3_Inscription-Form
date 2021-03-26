@@ -5,10 +5,10 @@
  session_start();
 
  // Initialisation du tableau des participants
- $nom = [];
- $prenom = [];
- $email=[];
- $numero=[];
+ $nom= [];
+ $pr= [];
+ $adr=[];
+ $tel=[];
 
  // Trouver ou créer le tableau dans Session
  if( isset( $_SESSION['nom'] ) ) {
@@ -24,46 +24,46 @@
 $_SESSION['nom'] =  $nom;
 
 
+
  // Trouver ou créer le tableau dans Session
- if( isset( $_SESSION['nom'] ) ) {
-    $prenom =  $_SESSION['nom'] ;
+ if( isset( $_SESSION['pr'] ) ) {
+    $prenom =  $_SESSION['pr'] ;
  }else {
-    $_SESSION['nom'] =  $prenom;
+    @$_SESSION['pr'] =  $prenom;
  }
 
  // Ajouter le nom du nom dans le tableau
- $prenom[] = @$_POST["prenom"] ;
+ $prenom[] = @$_POST["pr"] ;
 
  // Enregistrer le tableau dans la session
-$_SESSION['nom'] =  $prenom;
+$_SESSION['pr'] =  $prenom;
 
 
 // Trouver ou créer le tableau dans Session
-if( isset( $_SESSION['nom'] ) ) {
-    $email =  $_SESSION['nom'] ;
+if( isset( $_SESSION['email'] ) ) {
+    $email =  $_SESSION['email'] ;
  }else {
-    $_SESSION['nom'] =  $email;
+    $_SESSION['email'] =  $email;
  }
 
  // Ajouter le nom du nom dans le tableau
  $email[] = @$_POST["email"] ;
 
  // Enregistrer le tableau dans la session
-$_SESSION['nom'] =  $email;
+$_SESSION['email'] =  $email;
 
 // Trouver ou créer le tableau dans Session
-if( isset( $_SESSION['nom'] ) ) {
-    $numero =  $_SESSION['nom'] ;
+if( isset( $_SESSION['tel'] ) ) {
+    $numero =  $_SESSION['tel'] ;
  }else {
-    $_SESSION['nom'] =  $numero;
+    $_SESSION['tel'] =  $numero;
  }
 
  // Ajouter le nom du nom dans le tableau
- $numero[] = @$_POST["numero"] ;
+ $numero[] = @$_POST["tel"] ;
 
  // Enregistrer le tableau dans la session
-$_SESSION['nom'] =  $numero;
-// session_destroy()
+$_SESSION['tel'] =  $numero;
 
 ?>
 
@@ -76,38 +76,59 @@ $_SESSION['nom'] =  $numero;
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
-    <link rel='stylesheet' type='text/css' href='main.css'>
 </head>
 <body>
-<h1 class="mx-auto">Liste des participants</h1>
-<div class="mt-4 col-12">
-<table>
-<tr> 
-    <td class="bg-light">NOM</td>
-    <td class="bg-light">PRENOM</td> 
-    <td class="bg-light">EMAIL</td>
-    <td class="bg-light"> numero</td> 
- </tr>
-  <?php
-  $i=0;
-foreach ($_SESSION["nom"] as $value) {
-    if($i==0){
-        echo "<tr>"; 
-        echo "<td>".$value."</td>";
-        $i++;
-    }elseif($i<=2 ){
-        echo "<td>".$value."</td>";
-        $i++;
-    }else{
-        echo "<td>".$value."</td>";
-            echo "</tr>";
-            $i=0;
-     };
-  
-}
-?>
-</table>
+<h1>Liste des participants</h1>
+<div class="container">
+<div class="row">
+<div class="col-2">
+<ul>
+    <?php
+        foreach ($nom as $value) { 
+        ?>
+        <li><?php echo $value?></li>
+        <?php
+        }
+    ?>  
+   
+</ul>
 </div>
-</body>
+<div class="col-2">
+<ul>
+    <?php
+        foreach ($prenom as $value) { 
+        ?>
+        <li><?php echo $value?></li>
+        <?php
+        }
+    ?>  
+    </ul>
+ </div>  
+ <div class="col-4">
+<ul>
+    <?php
+        foreach ($email as $value) { 
+        ?>
+        <li><?php echo $value?></li>
+        <?php
+        }
+    ?> 
+    </ul> 
+ </div>  
+ <div class="col-3">
+<ul>
+    <?php
+        foreach ($numero as $value) { 
+        ?>
+        <li class=""><?php echo $value?></li>
+        <?php
+        }
+    ?>  
+ 
+</ul>
+</div> 
+</div>
+</div>
 
+</body>
 </html>

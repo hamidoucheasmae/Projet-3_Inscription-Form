@@ -1,72 +1,56 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <title>HTML</title>
-  
-  <!-- HTML -->
-  
-
-  <!-- Custom Styles -->
-  <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
 </head>
 <body>
-    <div class="img">
-        <img src="final-logo.png" alt="">
-      </div>
-      <form action="affichage.php" target="_blank" method="poste" > 
-        <div>
+
+<div class="container">
+<div class="row">
+    <form action="affichage.php" target="_blank" method="post" > 
+      <div class="row justify-content-center ">
+        <div class="col-5 bg-light color p-4 m-5 rounded-3">
+          <div class="d-flex justify-content-center">
+            <h1 class="pb-3">login</h1>
+          </div>
+          <fieldset>
+           
+            <div class="input-group mb-4">
+              <input type="text" class="form-control p-2" placeholder="Prenom" name="prenom" required >
+              <!-- <span class="input-group-text btn btn-success" id="basic-addon2">Numbre</span> -->
+            </div>
+            <div class="input-group mb-4">
+              <input type="text" class="form-control p-2" placeholder="Nom" name="nom" required >
+              <!-- <span class="input-group-text btn btn-success" id="basic-addon2">Name</span> -->
+            </div>
+            <div class="input-group mb-4">
+              <input type="text" class="form-control p-2" placeholder="Email" name="email" equired>
+              <!-- <span class="input-group-text btn btn-success" id="basic-addon2">@test.com</span> -->
+            </div>
+            <div class="input-group mb-4">
+              <input type="text" class="form-control p-2" placeholder="Numéro" name="numero" equired>
+              <!-- <span class="input-group-text btn btn-success" id="basic-addon2">Prenom</span> -->
+            </div>
           
-            <input type="text" name="nom" id="nom" required placeholder="  Nom">
-        </div>
-        <div>
-            
-            <input type="text" name="pr" id="pr" placeholder="  Prenom">
-        </div>
-        <div>
-            <textarea name="adr" id="adr" cols="20"  placeholder="  Adresse"></textarea>
-        </div>
-        <div>
-            
-            <input type="tel" name="tel" id="tel" placeholder="  Telephone">
-        </div>
-        <div>
-            <input type="email" name="email" id="email" placeholder="  Email">
-        </div>
-        <div>
-            
-            <input type="button" name="submit" id="sub" onclick="ajouter()" value="S'inscrire">
-        </div>
-    
-    <button type="submit">Enregistrer</button>
-    <table id="tab">
-        <thead>
-            <th>Nom</th>
-            <th>Prénom</th>
-            <th>Téléphone</th>
-        </thead>
-        <tbody id="tb">
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </fieldset>
 
-        </tbody>
-        
-    </table>
+        </div>
+     
+      </div>
     
-    <script src="js.js"></script>
     </form>
+
+   
+</div>
+
+</div>
+</table>
 </body>
 </html>
-  
