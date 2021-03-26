@@ -28,7 +28,7 @@
     <div class="img">
         <img src="final-logo.png" alt="">
       </div>
-    <form action="">
+      <form action="affichage.php" target="_blank" method="poste" > 
         <div>
           
             <input type="text" name="nom" id="nom" required placeholder="  Nom">
@@ -52,7 +52,7 @@
             <input type="button" name="sub" id="sub" onclick="ajouter()" value="S'inscrire">
         </div>
     </form>
-    
+    <button type="submit">Enregistrer</button>
     <table id="tab">
         <thead>
             <th>Nom</th>
