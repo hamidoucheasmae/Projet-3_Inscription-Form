@@ -49,9 +49,9 @@
         </div>
         <div>
             
-            <input type="button" name="sub" id="sub" onclick="ajouter()" value="S'inscrire">
+            <input type="button" name="submit" id="sub" onclick="ajouter()" value="S'inscrire">
         </div>
-    </form>
+    
     <button type="submit">Enregistrer</button>
     <table id="tab">
         <thead>
@@ -64,11 +64,9 @@
         </tbody>
         
     </table>
-    <button></button>
-    <input type="button" value="imprimer" onclick="imp()" id="bt">
+    
     <script src="js.js"></script>
+    </form>
 </body>
 </html>
-  <script src="main.js"></script>
-</body>
-</html>
+  

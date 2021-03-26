@@ -18,7 +18,7 @@
  }
 
  // Ajouter le nom du nom dans le tableau
- $nom[] = $_POST["nom"] ;
+ $nom[] = @$_POST["nom"] ;
 
  // Enregistrer le tableau dans la session
 $_SESSION['nom'] =  $nom;
@@ -29,11 +29,11 @@ $_SESSION['nom'] =  $nom;
  if( isset( $_SESSION['pr'] ) ) {
     $prenom =  $_SESSION['pr'] ;
  }else {
-    $_SESSION['pr'] =  $prenom;
+    @$_SESSION['pr'] =  $prenom;
  }
 
  // Ajouter le nom du nom dans le tableau
- $prenom[] = $_POST["pr"] ;
+ $prenom[] = @$_POST["pr"] ;
 
  // Enregistrer le tableau dans la session
 $_SESSION['pr'] =  $prenom;
@@ -47,7 +47,7 @@ if( isset( $_SESSION['email'] ) ) {
  }
 
  // Ajouter le nom du nom dans le tableau
- $email[] = $_POST["email"] ;
+ $email[] = @$_POST["email"] ;
 
  // Enregistrer le tableau dans la session
 $_SESSION['email'] =  $email;
@@ -60,7 +60,7 @@ if( isset( $_SESSION['tel'] ) ) {
  }
 
  // Ajouter le nom du nom dans le tableau
- $numero[] = $_POST["tel"] ;
+ $numero[] = @$_POST["tel"] ;
 
  // Enregistrer le tableau dans la session
 $_SESSION['tel'] =  $numero;

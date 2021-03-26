@@ -35,7 +35,7 @@
             
             <input type="button" name="sub" id="sub" onclick="ajouter()" value="S'inscrire">
         </div>
-    </form>
+    
     <button type="submit">Enregistrer</button>
     <table id="tab">
         <thead>
@@ -51,7 +51,7 @@
     <button></button>
     <input type="button" value="imprimer" onclick="imp()" id="bt">
     <script src="js.js"></script>
-</body>
+
         <button type="submit">Enregistrer</button>
     </form>
 </body>
