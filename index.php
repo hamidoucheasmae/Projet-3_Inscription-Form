@@ -23,19 +23,19 @@
            
             <div class="input-group mb-4">
               <input type="text" class="form-control p-2" placeholder="Prenom" name="prenom" required >
-              <!-- <span class="input-group-text btn btn-success" id="basic-addon2">Numbre</span> -->
+             
             </div>
             <div class="input-group mb-4">
               <input type="text" class="form-control p-2" placeholder="Nom" name="nom" required >
-              <!-- <span class="input-group-text btn btn-success" id="basic-addon2">Name</span> -->
+              
             </div>
             <div class="input-group mb-4">
               <input type="text" class="form-control p-2" placeholder="Email" name="email" equired>
-              <!-- <span class="input-group-text btn btn-success" id="basic-addon2">@test.com</span> -->
+              
             </div>
             <div class="input-group mb-4">
               <input type="text" class="form-control p-2" placeholder="Numéro" name="numero" equired>
-              <!-- <span class="input-group-text btn btn-success" id="basic-addon2">Prenom</span> -->
+             
             </div>
           
             <button type="submit" class="btn btn-primary">Submit</button>

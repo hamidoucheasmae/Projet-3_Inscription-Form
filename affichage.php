@@ -80,7 +80,7 @@ $_SESSION['nom'] =  $numero;
 </head>
 <body>
 <h1 class="mx-auto">Liste des participants</h1>
-<div class="mt-4 col-12">
+<div class="mt-4 col-12 ">
 <table>
 <tr> 
     <td class="bg-light">NOM</td>
