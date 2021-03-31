@@ -17,7 +17,7 @@
       <div class="row justify-content-center ">
         <div class="col-5 bg-light color p-4 m-5 rounded-3">
           <div class="d-flex justify-content-center">
-            <h1 class="pb-3">login</h1>
+            <h1 class="pb-3">Solicode</h1>
           </div>
           <fieldset>
            
@@ -38,7 +38,13 @@
              
             </div>
           
-            <button type="submit" class="btn btn-primary">Submit</button>
+            <!-- <button type="submit" class="btn btn-primary">Submit</button> -->
+            <div class="form-group">
+    <label class="col-md-4 control-label"></label>
+    <div class="col-md-4"><br>
+      <button type="submit" class="btn btn-warning text-center" >SUBMIT <span class="glyphicon glyphicon-send"></span></button>
+    </div>
+  </div>
           </fieldset>
 
         </div>
