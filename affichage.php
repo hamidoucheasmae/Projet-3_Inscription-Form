@@ -82,7 +82,30 @@ $_SESSION['nom'] =  $numero;
     <link rel='stylesheet' type='text/css' media='print' href='main1.css'>
 </head>
 <body>
-<h1 class="mx-auto">Liste des participants</h1>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand m-2" href="#">
+    <img src="final logo.png" alt="" width="Auto" height="60px"  class="d-inline-block align-top">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    </div>
+      <div class="navbar-nav">
+        <a class="nav-link" href="index.php">Page d'inscription</a>
+      </div>
+    
+    <div class="navbar-nav">
+        <a class="nav-link" href="affichage.php">Liste des participants</a>
+      </div>
+  </div>
+</nav>
+
+
+
+
+
 <div class="mt-4 col-12 ">
 <table>
 <tr> 

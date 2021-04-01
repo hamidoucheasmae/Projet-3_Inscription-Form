@@ -11,13 +11,35 @@
 </head>
 <body>
 
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand m-2" href="#">
+    <img src="final logo.png" alt="" width="Auto" height="60px"  class="d-inline-block align-top">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    </div>
+      <div class="navbar-nav">
+        <a class="nav-link" href="index.php">Page d'inscription</a>
+      </div>
+    
+    <div class="navbar-nav">
+        <a class="nav-link" href="affichage.php">Liste des participants</a>
+      </div>
+  </div>
+</nav>
+
+
 <div class="container">
 <div class="row">
     <form action="affichage.php" target="_blank" method="post" > 
       <div class="row justify-content-center ">
-        <div class="col-5 bg-light color p-4 m-5 rounded-3">
+        <div class="col-5 bg-light  p-4 m-5 rounded-3">
           <div class="d-flex justify-content-center">
-            <h1 class="pb-3">Solicode</h1>
+           
           </div>
           <fieldset>
            
@@ -37,14 +59,9 @@
               <input type="text" class="form-control p-2" placeholder="Numéro" name="numero" equired>
              
             </div>
-          
-            <!-- <button type="submit" class="btn btn-primary">Submit</button> -->
-            <div class="form-group">
-    <label class="col-md-4 control-label"></label>
-    <div class="col-md-4"><br>
-      <button type="submit" class="btn btn-warning text-center" >SUBMIT <span class="glyphicon glyphicon-send"></span></button>
-    </div>
-  </div>
+           <div class="input-group mb-4">
+            <button type="submit" class="btn btn-primary  col-md-6 col-sm-12 p-2">Sign in</button>
+            </div>
           </fieldset>
 
         </div>

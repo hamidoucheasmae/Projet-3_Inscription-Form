@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+
 body{
   background: #121326;
 }
@@ -55,3 +58,11 @@ color: #f2f2f2;
 
 }
 
+.nav-link{
+  font-family: 'Roboto', sans-serif;
+
+}
+.btn {
+
+  position: center;
+}
