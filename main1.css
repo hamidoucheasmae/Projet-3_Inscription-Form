@@ -1,9 +1,6 @@
 
-/* button{
-
-    display: none;
-    */
-   
+button{
+    display: none !important;
 }
 
 button{
@@ -13,6 +10,9 @@ button{
     border:1px #f2f2f2 solid !important ;
     color: #ffff;
   }
+
+
+
 /* .btn{   
     display: none;
     font-size: 20px;
