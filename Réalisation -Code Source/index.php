@@ -43,7 +43,7 @@
           <fieldset>
            
             <div class="input-group mb-4">
-              <input type="text" class="form-control p-2" placeholder="Prenom" name="prenom" required >
+              <input type="text" class="form-control md-6 p-2" placeholder="Prenom" name="prenom" required >
              
             </div>
             <div class="input-group mb-4">
