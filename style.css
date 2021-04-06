@@ -42,7 +42,6 @@ input[type="text"], input[type="date"],input[type="number"],input[type="email"],
 #bt
 {
     display: none;
-   
     font-size: 20px;
     font-weight: bolder;
     background-color: #F21651;
@@ -112,9 +111,16 @@ td{
 }
 
 @media print{
-   #bt,form, .img,button,button 
+   #bt ,form, .img,button,button 
     {
         display:none;
     }
+
+}
+@media print{
+  #bt
+   {
+       display:none;
+   }
 
 }
