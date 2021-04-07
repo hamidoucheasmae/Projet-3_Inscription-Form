@@ -6,21 +6,19 @@ $liste_apprenants = [];
 
  // Saisie des données
  $apprenant = new Apprenant;
- $apprenant->setNom("Madani 1");
- $apprenant->setPrenom("Ali");
+$apprenant-> Nom = "Asmae";
+$apprenant-> Prenom = "Hamidouche";
  $liste_apprenants[] = $apprenant ;
 
  $apprenant = new Apprenant;
- $apprenant->setNom("Chami");
- $apprenant->setPrenom("Mouad");
+  $apprenant->Nom = "Najale";
+ $apprenant-> Prenom = "Sebbar";
  $liste_apprenants[] = $apprenant ;
 
  $apprenant = new Apprenant;
- $apprenant->setNom("Madani");
- $apprenant->setPrenom("Fatima");
+ $apprenant->Nom = "Najale";
+ $apprenant-> Prenom = "Sebbar";
  $liste_apprenants[] = $apprenant ;
-
- // $age = array("Peter"=>35, "Ben"=>37, "Joe"=>43);
 
  // Traitement
  $liste_apprenants_json =  json_encode($liste_apprenants);
