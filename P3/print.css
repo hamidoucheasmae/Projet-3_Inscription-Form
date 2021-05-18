@@ -1,0 +1,21 @@
+#bt{
+    display: none;
+    
+}
+
+input{
+    display: none;
+}
+
+#cc{
+    display: none;
+}
+
+input ,form, .img,button
+{
+    display:none;
+}
+
+#bt{
+  display: none;
+}
