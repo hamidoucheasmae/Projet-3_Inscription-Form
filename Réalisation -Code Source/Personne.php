@@ -5,15 +5,15 @@
         public $prenom;
         public $nom;
         public $email;
-        public $adress;
+        
  
 
-        public function __construct($nom,$prenom,$email,$adress) {
+        public function __construct($nom,$prenom,$email) {
    
             $this->nom = $nom;
             $this->prenom = $prenom;
             $this->email = $email;
-            $this->adress = $adress;
+            
         }
 
        
